@@ -5,6 +5,9 @@
 	text-transform: uppercase;
 	border-radius: 30px;
 	font-size: 13px;
+	color: #fff !important;
+	background-image: linear-gradient(to top, rgb(22, 43, 238),rgba(57, 187, 226, 0.699));
+
 }
 
 
