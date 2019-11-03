@@ -11,21 +11,9 @@
 	<!-- Botstrap core CSS -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-	<!-- FontAwesome Icons External-->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
-	<!-- Google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-
-
-	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
 </head>
 <body>
 <!-- Navbar -->
@@ -40,13 +28,13 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 		  <ul class="navbar-nav  ml-auto">
 			<li class="nav-item">
-			  <a class="nav-link" href="#">Espanol</a>
+			  <a class="nav-link" href="#">Espanol</a> 
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link" href="#">English</a>
 			</li>
 			<li class="nav-item">
-				<a class="btn btn-primary custom-button" href="#">Contact Us</a>
+				<a class="btn btn-primary custom-button" data-toggle="modal" data-target="#exampleModal">Contact</a>
 			</li>
 		  </ul>
 		</div>
@@ -59,7 +47,7 @@
 			<div class="row">
 				<div class="col-12 col-lg-6 offset-lg-6">
 					<h1 class="display-4">Start a <span>new career</span> in <span>Healthcare Industry</span></h1>
-					<a class="btn btn-primary btn-lg custom-button" href="#" role="button">Register Here</a>
+					<a class="btn btn-primary custom-button page-scroll" href="#register" role="button">Register Here</a>
 				</div>
 			</div><!--  row -->
 		</div> <!-- container -->
@@ -100,7 +88,7 @@
 
 	<!-- Register Form -->
 	<div class="container">
-		<div class="row register">
+		<div class="row register" id="register">
 			<aside class="col-lg-4">
 				<h3>Tell us who you are</h3>
 				<div class="widget">
@@ -162,10 +150,10 @@
 					</div>
 				</div>
 				<div class="agreement">
-					<input type="checkbox" name="agreement" value="agreement"> This form is intended to attract individuals into seeking information about healthcare careers. It is not a recruitment tool for any specific group, organization or educational program. By clicking her, I agree that Tomorrow’s Healthcare professionals may call and/or text me about career counseling and employment services related to entering a career in the healthcare industry at any phone numbers provided using automated dialing technology.<br>
+					<input type="checkbox" name="agreement" value="agreement" checked> This form is intended to attract individuals into seeking information about healthcare careers. It is not a recruitment tool for any specific group, organization or educational program. By clicking her, I agree that Tomorrow’s Healthcare professionals may call and/or text me about career counseling and employment services related to entering a career in the healthcare industry at any phone numbers provided using automated dialing technology.<br>
 				</div>
 				<div class="submit">
-					<button type"submit" class="btn btn-primary custom-button">SUBMIT</button>
+					<button type"submit" class="btn btn-primary custom-button" data-toggle="modal" data-target="#Modal">SUBMIT</button>
 				</div>
 				<div class="phone">
 					<h5>Schedule a Phone Counseling Session Act now! Call 404-400-2413</h5>
@@ -174,11 +162,45 @@
 		</div>
 	</div>
 	<!-- Register Form -->
+  
+	<!-- Modal Success -->
+	<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="ModalLabel">Successful Submission</h5>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- Modal Success -->
+
+	<!-- Modal Contact-->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Our Contact</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			</div>
+			<div class="modal-body">
+			<h2>Call 404-400-2413</h2>
+			<p>Schedule a Phone Counseling Session</p>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- Modal Contact-->
+	
+		
+	<!-- Footer -->
 		<div class="container footer">
 			<p>Copyright 2019. Tomorrow's Healthcare Profossionals. LLC</p>
 		</div>
-	<!-- Footer -->
-
 	<!-- Footer -->
 
 	<!-- Javascript
